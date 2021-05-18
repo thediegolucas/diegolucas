@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Typewriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7eb80dbd06.js" crossorigin="anonymous"></script>
+    <!-- CSS & JavaScript -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+    <!-- @author Diego Lucas -->
+    <title>Bem-vindos ao mundo de Diego Lucas</title>
+</head>
+<body>
+    <!-- Home -->
+    <div class="background animate__animated animate__fadeIn">
+        <section id="title-page" class="container-fluid">
+            <div class="title">
+                <p class="welcome">Bem-vindos ao mundo de</p>
+                <h2 class="name">Diego Lucas</h2>
+                <p id="typewriter"></p>
+                <script type="text/javascript">
+                    const instance = new Typewriter("#typewriter", {
+                        loop: true,
+                        delay: 30,
+                    });
+                    instance.typeString("Escritor")
+                        .pauseFor(2000)
+                        .deleteAll(15)
+                        .typeString("Autor de <em>As Aventuras de Alex Canyon</em>")
+                        .pauseFor(2000)
+                        .deleteAll(15)
+                        .start();
+                </script>
+                <div class="social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <button class="btn btn-lg btn-outline-light">VISITAR SITE</button>
+            </div>
+        </section>
+    </div>
+</body>
