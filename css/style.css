@@ -53,7 +53,7 @@ html, body {
   margin-top: 3%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 920px) {
   .title {
     padding: 15% 0 0 0;
   }
